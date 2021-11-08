@@ -9,6 +9,9 @@ function setup() {
     squares[i][j] = new Cell((125*i) + 100 ,(125*j) + 100);
     }
   }
+  const array = [1, 2, 3, 4];
+  const shuffledArray = array.sort((a, b) => 0.5 - Math.random());
+  console.log(shuffledArray);
 }
 
 function draw() {
@@ -19,4 +22,6 @@ function draw() {
     squares[i][j].print();
   }
   }  
+  
 }
+
